@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* FileUploader.css */
+.file-uploader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  border: 3px dashed #1e90ff; /* Borde de rayitas */
+  border-radius: 10px;
+  background-color: #f0f8ff; /* Color azul claro */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+.file-label:hover {
+  background-color: #e0f0ff; /* Cambio de color al pasar el mouse */
+}
+
+.file-upload-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.upload-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.upload-text {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #1e90ff;
+}
+
+.medical-results {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.results-grid p {
+  margin: 10px 0;
+}
+
+.history {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  margin-bottom: 10px;
+}
+
+.loader {
+  text-align: center;
+  margin-top: 20px;
+}
+
