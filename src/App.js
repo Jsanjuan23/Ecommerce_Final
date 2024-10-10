@@ -1,10 +1,11 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import AdminDashboard from './componentes/admin/AdminDashboard';
+import Login from './componentes/auth/Login';
+import RoleBasedRoute from './componentes/auth/PrivateRoute';
+import Registro from './componentes/auth/Registro';
 import Principal from './componentes/Principal';
-import Login from './componentes/Login';
-import Registro from './componentes/Registro';
-import MenuPrincipal from './componentes/MenuPrincipal';
-import Descuentos from './componentes/Descuentos';
+import ClienteDashboard from './componentes/user/ClienteDashboard';
 
 function App() {
   return (
@@ -13,8 +14,15 @@ function App() {
         <Route path="/" element={<Principal />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Registro />} />
-        <Route path="/menu-principal" element={<MenuPrincipal />} />
-        <Route path="/descuentos" element={<Descuentos />} />
+        <Route path="/admin/*" element={
+            <RoleBasedRoute
+              element={<AdminDashboard />}
+              requiredRole="admin"
+              fallbackRoute="/cliente"
+            />
+          }
+        />
+        <Route path="/cliente/*" element={<ClienteDashboard />} />
       </Routes>
     </div>
   );
