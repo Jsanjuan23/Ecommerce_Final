@@ -87,10 +87,10 @@ const Shop = () => {
                         </small>
                       </p>
                       <button
-                        className="btn btn-primary"
+                        className="btn" style={{ backgroundColor: '#343a40', color: '#fff', borderRadius: '5px', border: '2px solid #DAF7A6'}}
                         onClick={() => addToCart(product, 1)}
-                      >
-                        Agregar al Carrito
+                      >  <i className="fas fa-shopping-cart" style={{ marginRight: '5px', color: '#DAF7A6' }}></i>
+                        Añadir
                       </button>
                     </div>
                   </div>
