@@ -72,10 +72,10 @@ const Carrito = () => {
                         </p>
                       </div>
                       <button 
-                        className="btn btn-danger btn-sm mt-2" 
+                        className="btn" style={{ backgroundColor: '#343a40',color: '#DAF7A6',border: '2px solid #DAF7A6',borderRadius: '5px'}} 
                         onClick={() => removeFromCart(product.id)}
                       >
-                        Eliminar
+                        <i className="fas fa-trash" style={{ color: 'white' }}></i>
                       </button>
                     </div>
                   </div>

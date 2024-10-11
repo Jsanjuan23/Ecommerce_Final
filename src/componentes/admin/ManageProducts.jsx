@@ -123,7 +123,7 @@ const ManageProducts = () => {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit"   className="btn" style={{ backgroundColor: '#343a40',color: '#fff',border: '2px solid #DAF7A6'}}>
           {editingProductId ? 'Actualizar Producto' : 'Agregar Producto'}
         </button>
       </form>
@@ -138,16 +138,16 @@ const ManageProducts = () => {
                 <p className="card-text">Precio: ${product.price}</p>
                 <p className="card-text">{product.description}</p>
                 <button
-                  className="btn btn-warning me-2"
+                  className="btn" style={{ backgroundColor: '#343a40',color: '#DAF7A6',border: '2px solid #DAF7A6',borderRadius: '5px'}}
                   onClick={() => handleEdit(product)}
                 >
-                  Editar
+                  <i className="fas fa-edit" style={{ color: 'white', marginRight: '5px' }}></i>
                 </button>
                 <button
-                  className="btn btn-danger"
+                  className="btn" style={{ backgroundColor: '#343a40',color: '#DAF7A6',border: '2px solid #DAF7A6',borderRadius: '5px'}}
                   onClick={() => handleDelete(product.id)}
                 >
-                  Eliminar
+                  <i className="fas fa-trash" style={{ color: 'white', marginRight: '5px' }}></i>
                 </button>
               </div>
             </div>

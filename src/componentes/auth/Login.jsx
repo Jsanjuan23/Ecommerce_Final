@@ -64,10 +64,10 @@ const Login = () => {
                   />
                 </div>
                 <div className="d-flex justify-content-start mt-4">
-                  <button type="submit" className="btn btn-success mr-3">
+                  <button type="submit" className="btn" style={{backgroundColor: '#DAF7A6', color: '#343a40', fontWeight: 'bold', border: '2px solid #DAF7A6', borderRadius: '5px' , marginRight: '5px'}}>
                     Ingresar
                   </button>
-                  <Link to="/registro" className="btn btn-outline-success">
+                  <Link to="/registro" className="btn" style={{backgroundColor: '#343a40',color: '#fff', fontWeight: 'bold', border: '2px solid #DAF7A6', borderRadius: '5px'}}>
                     Registrarse
                   </Link>
                 </div>
