@@ -39,7 +39,7 @@ export const AuthProvider = ({ children }) => {
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [navigate]);
 
   const logout = async () => {
     try {
